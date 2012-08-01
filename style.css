@@ -84,9 +84,9 @@ aside {
 	border-right: 1px solid white;
 	margin: 15px 0 0 0 0;
 	border-radius: 10px;
-	-moz-box-shadow: inset -5px -5px 5px #888;
-	-webkit-box-shadow: inset -5px -5px 5px #888;
-	box-shadow: inset -5px -5px 5px #888;
+	-moz-box-shadow: inset -10px -10px 10px #3333ff;
+	-webkit-box-shadow: inset -10px -10px 10px #3333ff;
+	box-shadow: inset -10px -10px 10px #3333ff;
 	color: #666;
 	white-space: nowrap
 }
@@ -100,7 +100,8 @@ aside {
 	padding: 0;
 	position: absolute;
 	visibility: hidden;
-	border-top: 1px solid white}
+	
+}
 		
 #menu li ul li {	
 	float: none;
