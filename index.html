@@ -1,104 +1,77 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>HTML TEMPLATE</title>
-       <link rel="stylesheet" type="text/css" href="style.css">
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js" type="text/javascript"></script>
-<script type="text/javascript" src="script.js"></script>
-       <script type="text/javascript">
-var timeout    = 500;
-var closetimer = 0;
-var ddmenuitem = 0;
-
-function jsddm_open()
-{  jsddm_canceltimer();
-   jsddm_close();
-   ddmenuitem = $(this).find('ul').css('visibility', 'visible');}
-
-function jsddm_close()
-{  if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');}
-
-function jsddm_timer()
-{  closetimer = window.setTimeout(jsddm_close, timeout);}
-
-function jsddm_canceltimer()
-{  if(closetimer)
-   {  window.clearTimeout(closetimer);
-      closetimer = null;}}
-
-$(document).ready(function()
-{  $('#jsddm > li').bind('mouseover', jsddm_open)
-   $('#jsddm > li').bind('mouseout',  jsddm_timer)});
-
-document.onclick = jsddm_close;
-
-              </script>
+        <title>HTML TEMPLATE</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js" type="text/javascript"></script>
+        <script type="text/javascript" src="script.js"></script>
+       
     </head> 
-     <body onload="setPosition();">
+    
+    <body onload="setPosition();">
        <div id="wrapper">
-       			<header>
+       			
+            <header>
        				<aside>
        					<p> <form method="get" action="/search" id="search">
-  <input name="q" type="text" size="40" color="#000000" placeholder="Search..." />
-</form> </p>
+                <input name="q" type="text" size="40" color="#000000" placeholder="Search..." />
+                </form> </p>
        				</aside>
 
                                                        
-                                    <ul id="jsddm">
-                                              <li><a href="#">HOME</a>
-                                                  <ul>
-                                                      <li><a href="#">ONE</a></li>
-                                                      <li><a href="#">TWO</a></li>
-                                                      <li><a href="#">THREE</a></li>
-                                                  </ul>
-                                              </li>
-                                              <li><a href="#">PAGE1</a>
-                                                  <ul>
-                                                      <li><a href="#">ONE</a></li>
-                                                      <li><a href="#">TWO</a></li>
-                                                      <li><a href="#">THREE</a></li>
-                                                      <li><a href="#">FOUR</a></li>
-                                                      <li><a href="#">FIVE</a></li>
-                                                  </ul>
-                                              </li>
-                                              <li><a href="#">PAGE2</a></li>
-                                              <li><a href="#">PAGE3</a></li>
-                                              <li><a href="#">PAGE4</a></li>
-                                          </ul>
-                            </header>
-                            <div id="main-content">
-                                   <div id="col-right">
-                                    <img src="placeholder.jpg" id="ima">
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non sem sit amet est aliquam condimentum. Aenean congue, turpis posuere mollis convallis, neque augue luctus nisl, ac gravida lorem enim at arcu. Duis varius lacus quis ante iaculis egestas. Vestibulum ornare, justo consectetur tempus eleifend, quam risus consectetur sem, et cursus mauris nibh in ipsum. Fusce non massa massa, quis pretium ligula. Proin sed viverra nunc. Nulla at ultricies odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus erat purus, sollicitudin vitae volutpat eget, molestie nec massa. Nullam sollicitudin ipsum id nunc scelerisque aliquam. Sed at nunc ac nunc tincidunt malesuada et ut dolor. Cras vestibulum aliquet facilisis. Nulla ipsum lorem, tempor id vulputate non, congue ut sem. Suspendisse eu ipsum ut odio accumsan tempor ac in libero.
-
-</p>
-                                   </div>
-                                   <div id="col-left">
-                                 <div id="slideshow">
-    <img src="images/1.jpg" alt="" class="active" />
-    <img src="images/2.jpg" alt="" />
-    <img src="images/3.jpg" alt="" />
-    <img src="images/4.jpg" alt="" />
-    <img src="images/5.jpg" alt="" />
-    <img src="images/6.jpg" alt="" />
-    <img src="images/7.jpg" alt="" />
-    <img src="images/8.jpg" alt="" />
-    <img src="images/9.jpg" alt="" />
-</div>
-<p>Mauris accumsan, lacus sit amet malesuada condimentum, mi massa semper nisi, quis iaculis orci metus vitae leo. Ut nec felis vel diam blandit hendrerit. Fusce consectetur erat vitae nunc condimentum imperdiet. Quisque placerat tincidunt libero, imperdiet ullamcorper ligula dapibus et. Nunc sed facilisis massa. Maecenas at eros justo, id luctus mauris. Maecenas iaculis dapibus pulvinar. Nunc commodo velit sed velit aliquet non posuere ipsum sollicitudin.
-
-</p>                            </div>
-
-
+               <ul id="menu">
+                    <li><a href="#">HOME</a>
+                          <ul>
+                               <li><a href="#">ONE</a></li>
+                                <li><a href="#">TWO</a></li>
+                                <li><a href="#">THREE</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="#">PAGE1</a>
+                          <ul>
+                                <li><a href="#">ONE</a></li>
+                                <li><a href="#">TWO</a></li>
+                                <li><a href="#">THREE</a></li>
+                                <li><a href="#">FOUR</a></li>
+                                <li><a href="#">FIVE</a></li>
+                          </ul>
+                    </li>
+                    <li><a href="#">PAGE2</a></li>
+                    <li><a href="#">PAGE3</a></li>
+                    <li><a href="#">PAGE4</a></li>
+                </ul>
+            </header>
+            <div id="main-content">
+                     <div id="col-right">
+                            <img src="placeholder.jpg" id="ima">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non sem sit amet est aliquam condimentum. Aenean congue, turpis posuere mollis convallis, neque augue luctus nisl, ac gravida lorem enim at arcu. Duis varius lacus quis ante iaculis egestas. Vestibulum ornare, justo consectetur tempus eleifend, quam risus consectetur sem, et cursus mauris nibh in ipsum. Fusce non massa massa, quis pretium ligula. Proin sed viverra nunc. Nulla at ultricies odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus erat purus, sollicitudin vitae volutpat eget, molestie nec massa. Nullam sollicitudin ipsum id nunc scelerisque aliquam. Sed at nunc ac nunc tincidunt malesuada et ut dolor. Cras vestibulum aliquet facilisis. Nulla ipsum lorem, tempor id vulputate non, congue ut sem. Suspendisse eu ipsum ut odio accumsan tempor ac in libero.</p>
+                      </div>
+                      <div id="col-left">
+                            <div id="slideshow">
+                                  <img src="images/1.jpg" alt="" class="active" />
+                                  <img src="images/2.jpg" alt="" />
+                                  <img src="images/3.jpg" alt="" />
+                                  <img src="images/4.jpg" alt="" />
+                                  <img src="images/5.jpg" alt="" />
+                                  <img src="images/6.jpg" alt="" />
+                                  <img src="images/7.jpg" alt="" />
+                                  <img src="images/8.jpg" alt="" />
+                                  <img src="images/9.jpg" alt="" />
                             </div>
+                            <p>Mauris accumsan, lacus sit amet malesuada condimentum, mi massa semper nisi, quis iaculis orci metus vitae leo. Ut nec felis vel diam blandit hendrerit. Fusce consectetur erat vitae nunc condimentum imperdiet. Quisque placerat tincidunt libero, imperdiet ullamcorper ligula dapibus et. Nunc sed facilisis massa. Maecenas at eros justo, id luctus mauris. Maecenas iaculis dapibus pulvinar. Nunc commodo velit sed velit aliquet non posuere ipsum sollicitudin.</p>                            
+                      </div>
+
+
+            </div>
        			<footer id="footer">
-<ul>
-                                                      <li><a href="#">ONE</a></li>
-                                                      <li><a href="#">TWO</a></li>
-                                                      <li><a href="#">THREE</a></li>
-                                                  </ul>
+                      <ul>
+                          <li><a href="#">ONE</a></li>
+                          <li><a href="#">TWO</a></li>
+                          <li><a href="#">THREE</a></li>
+                      </ul>
 
        			</footer>
-                     </div>
-      </body>	
+
+       </div> <!-- end of wrapper -->
+    </body>	
 </html>
